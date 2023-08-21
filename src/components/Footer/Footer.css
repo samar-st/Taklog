@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+/* font-family: 'Rubik', sans-serif;
+font-family: 'Manrope', sans-serif; */
+* {
+  padding: 0;
+}
+.content-area-of-footer {
+  margin-top: 12%;
+  background-color: #f5f5f5;
+  border-radius: 80px 80px 0px 0px;
+  padding: 45px;
+}
+.head-text-footer {
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 70px;
+  font-family: "Rubik", sans-serif;
+}
+.head-text-footer span {
+  color: #0063a4;
+}
+/*  */
+.common-footer-container {
+  margin-top: 90px !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.block-logo-footer {
+  row-gap: 30px !important;
+  display: flex;
+  flex-direction: column;
+}
+.block-logo-footer img {
+  width: 200px;
+  height: 80px;
+}
+.pre-text-after-logo {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+.block-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.block-menu-footer-clone {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.url-link-footer {
+  padding: 0 !important;
+  font-size: 17px !important;
+  line-height: 28px;
+  font-weight: 400 !important;
+  font-family: "Manrope", sans-serif;
+  color: #111111 !important;
+}
+#menu-links-of-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-text-footer {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -0.24px;
+}
+.only-for-contacts-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.only-for-contacts-footer-clone {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.unmutted-text {
+  margin: 0 !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  font-family: "Manrope", sans-serif;
+  color: #111111;
+  opacity: 0.5;
+}
+.phone-number-footer {
+  padding: 0 !important;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  line-height: 23.22px;
+  color: #111111 !important;
+  font-family: "Manrope", sans-serif;
+}
+.email-footer {
+  padding: 0 !important;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  line-height: 28.22px;
+  color: #111111 !important;
+  font-family: "Manrope", sans-serif;
+}
+.adress-location-text {
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  line-height: 24.22px !important;
+  color: #111111 !important;
+  font-family: "Manrope", sans-serif !important;
+}
+.consultation-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px !important;
+}
+.have-a-questions-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Manrope", sans-serif !important;
+  color: #111111;
+  opacity: 0.5;
+  margin: 0 !important;
+}
+.call-us-footer {
+  border: none;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  padding: 12px 38.5px 14px 42px;
+  border-radius: 200px;
+  background: #0063a4;
+  width: 70%;
+  text-align: center;
+}
+.block-for-socials {
+  display: flex;
+  gap: 22px;
+}
+.links-for-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #31373f;
+  border-radius: 50%;
+}
+#mob-resp-block-footer { 
+  display: none !important;
+  
+}
+
+@media screen and (max-width: 500px) {
+  #mob-resp-block-footer { 
+     display: flex !important;
+     gap: 50px !important;
+  }
+  .block-menu-footer { 
+    display: none;
+  }
+  .only-for-contacts-footer { 
+    display: none;
+  }
+  .content-area-of-footer {
+    margin-top: 12%;
+    background-color: #f5f5f5;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+  }
+  .head-text-footer {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    font-family: "Rubik", sans-serif;
+  }
+  .common-footer-container {
+    margin-top: 90px !important;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: flex-start;
+}
+}

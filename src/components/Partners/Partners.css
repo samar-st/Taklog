@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* font-family: 'Rubik', sans-serif;
+font-family: 'Manrope', sans-serif; */
+
+.our-partners-head-text { 
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.24px;
+    color: #0063A4;
+}
+.entering-sub-text { 
+    font-weight: 400;
+    font-size: 60PX;
+    line-height: 70px;
+    color: #161616;
+}
+.blue-taklog-text { 
+    color: #0063A4;
+}
+.content-area-partners { 
+    margin-top: 19%;
+}
+.block-area-of-logos { 
+    margin-top: 50px !important;
+    display: flex !important;
+    flex-direction: row;
+    gap: 100px;
+}
+.block-area-of-logos img { 
+    width: 100%;
+    max-width: fit-content;
+}
+@media screen and (max-width:500px) { 
+    .our-partners-head-text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.24px;
+        color: #0063A4;
+    }
+    .entering-sub-text {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 40px;
+        color: #161616;
+    }
+}

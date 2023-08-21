@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+.link-navbar-top {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  color: #161616 !important;
+}
+.content-of-navbar {
+  padding: 20px 70px 20px 70px !important;
+  box-shadow: 0px 0px 3px 0px #00000038;
+}
+.connect-button-navbar {
+  width: 141px;
+  height: 46px;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  font-weight: 400;
+  border-radius: 30px;
+  padding: 10px 26px;
+  border: 2px solid #0063a4;
+  color: #0063a4;
+  background-color: transparent;
+  transition: 0.4 ease-in-out;
+}
+.connect-button-navbar:hover {
+  background: #0063a4;
+  transition: 0.4 ease-in-out;
+  color: #ffffff;
+}
+a {
+  color: #161616 !important;
+  text-decoration: none !important;
+}
+
+/* media query */
+@media screen and (min-width: 1200px) {
+  .content-of-navbar {
+    padding: 10px 50px 10px 50px !important;
+    box-shadow: 0px 0px 3px 0px #00000038;
+  }
+}
+@media screen and (max-width: 769px) {
+  .content-of-navbar {
+    padding: 0px !important;
+    box-shadow: 0px 0px 3px 0px #00000038;
+  }
+}
+@media screen and (max-width:550px) { 
+  .content-of-navbar { 
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px !important;
+    border: none !important;
+    box-shadow: 0px 2px 8px 0px #0000001F;
+  }
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  border: none !important;
+}

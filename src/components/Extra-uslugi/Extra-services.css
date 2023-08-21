@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+.extra-content-area { 
+    row-gap: 30px;
+}
+.extra-services-card { 
+    border-radius: 20px !important;
+    padding: 46px 45px;
+    box-shadow: 0px 2px 15px 0px #0000001A;
+    border: none !important;
+}
+.uslugi-text-extra { 
+    font-weight: 400 !important;
+    font-size: 30px !important;
+    line-height: 36px !important;
+    font-family: 'Rubik', sans-serif;
+    color: #161616 !important;
+}
+
+.oformlenie-text-list { 
+    font-family: 'Manrope', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 30px !important;
+    color: #161616;
+}
+@media screen and (max-width:500px) {
+    .uslugi-text-extra {
+        font-weight: 400 !important;
+        font-size: 22px !important;
+        line-height: 26px !important;
+        font-family: 'Rubik', sans-serif;
+        color: #161616 !important;
+    }
+    .extra-services-card {
+        border-radius: 20px !important;
+        /* padding: 46px 45px; */
+        padding: 24px 30px;
+        box-shadow: 0px 2px 15px 0px #0000001A;
+        border: none !important;
+    }
+}
