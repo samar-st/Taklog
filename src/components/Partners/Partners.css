@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 /* font-family: 'Rubik', sans-serif;
 font-family: 'Manrope', sans-serif; */
@@ -30,11 +30,27 @@ font-family: 'Manrope', sans-serif; */
     flex-direction: row;
     gap: 100px;
 }
+.block-area-of-logos-mobile-version { 
+    display: none !important;
+}
 .block-area-of-logos img { 
     width: 100%;
     max-width: fit-content;
 }
+.block-area-of-logos-mobile-version img { 
+    width: 100%;
+    max-width: fit-content;
+}
 @media screen and (max-width:500px) { 
+    #sliders-of-logos { 
+        margin: auto !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #partners { 
+        padding: 15px;
+    }
     .our-partners-head-text {
         font-family: 'Rubik', sans-serif;
         font-weight: 400;
@@ -48,5 +64,17 @@ font-family: 'Manrope', sans-serif; */
         font-size: 34px;
         line-height: 40px;
         color: #161616;
+    }
+}
+@media screen and (max-width:769px) { 
+    .block-area-of-logos { 
+        margin-top: 50px !important;
+        display: flex !important;
+        flex-direction: row;
+        gap: 100px;
+        display: none !important;
+    }
+    .block-area-of-logos-mobile-version { 
+        display: block !important;
     }
 }

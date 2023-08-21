@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@
   font-family: "Rubik", sans-serif;
 }
 .text-of-exp {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 17px;
   line-height: 26px;
   letter-spacing: 0.2px;
@@ -123,6 +123,7 @@
 /* media query for screens up to 1025px */
 @media screen and (max-width: 1025px) {
   .right-part-of-container {
+    margin-right: -42px !important;
     margin-left: 0;
     margin-top: 0;
     display: flex;
@@ -138,6 +139,14 @@
   }
 }
 @media screen and (max-width: 769px) {
+  .right-part-of-container {
+    margin-right: -35px !important;
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
   .head-text-main {
     font-size: 50px; /* Adjust font size as needed */
   }
@@ -150,6 +159,14 @@
 }
 
 @media screen and (max-width: 500px) {
+  .right-part-of-container {
+    margin-right: -11.9px !important;
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
   .head-text-main {
     font-size: 34px !important;
     font-weight: 400;
@@ -168,7 +185,7 @@
     line-height: 36px;
   }
   .text-of-exp {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 15px;
     line-height: 22px;
     letter-spacing: 0.2px;

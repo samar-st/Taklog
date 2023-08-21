@@ -6,6 +6,17 @@ import Logo2 from '../../images/Item ⏵ menu-partner-pytam.png.svg';
 import Logo3 from '../../images/Item ⏵ menu-partner-unt.png.svg';
 import Logo4 from '../../images/Item ⏵ RTIB1.jpg.svg';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Navigation } from 'swiper/modules';
+
+
 const Partners = () => {
   return (
     <Container className="content-area-partners" id="partners">
@@ -22,6 +33,22 @@ const Partners = () => {
         <img src={Logo2} alt="Logotip img of company" />
         <img src={Logo3} alt="Logotip img of company" />
         <img src={Logo4} alt="Logotip img of company" />
+      </Row>
+      <Row className="block-area-of-logos-mobile-version">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide id="sliders-of-logos">
+        <img src={Logo1} alt="Logotip img of company" />
+        </SwiperSlide>
+        <SwiperSlide id="sliders-of-logos">
+        <img src={Logo2} alt="Logotip img of company" />
+        </SwiperSlide>
+        <SwiperSlide id="sliders-of-logos">
+        <img src={Logo3} alt="Logotip img of company" />
+        </SwiperSlide>
+        <SwiperSlide id="sliders-of-logos">
+        <img src={Logo4} alt="Logotip img of company" />
+        </SwiperSlide>
+      </Swiper>
       </Row>
     </Container>
   );

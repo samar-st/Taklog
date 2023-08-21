@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 
 .extra-content-area { 
@@ -10,6 +10,14 @@
     padding: 46px 45px;
     box-shadow: 0px 2px 15px 0px #0000001A;
     border: none !important;
+    height: 330px !important;
+}
+.extra-services-card-2 { 
+    border-radius: 20px !important;
+    padding: 46px 45px;
+    box-shadow: 0px 2px 15px 0px #0000001A;
+    border: none !important;
+    height: 498px !important;
 }
 .uslugi-text-extra { 
     font-weight: 400 !important;
@@ -35,10 +43,32 @@
         color: #161616 !important;
     }
     .extra-services-card {
-        border-radius: 20px !important;
+        border-radius: 11px !important;
         /* padding: 46px 45px; */
         padding: 24px 30px;
         box-shadow: 0px 2px 15px 0px #0000001A;
         border: none !important;
+        height: 100% !important;
     }
+    .oformlenie-text-list {
+        font-family: 'Manrope', sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 30px !important;
+        color: #161616;
+    }
+    .extra-services-card-2 {
+        border-radius: 11px !important;
+        /* padding: 46px 45px; */
+        padding: 24px 30px;
+        box-shadow: 0px 2px 15px 0px #0000001A;
+        border: none !important;
+        height: 100% !important;
+    }
+    #ul-list { 
+        gap: 8px !important;
+    }
+}
+#ul-list { 
+    gap: 14px;
 }

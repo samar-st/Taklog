@@ -27,7 +27,7 @@ const Services = () => {
 
       {/* 3 cards with images of trains and airplane */}
       <Row className="services-container-images-cards">
-        <Col className="d-flex flex-column align-items-center justify-content-center">
+        <Col md={4} className="d-flex flex-column align-items-center justify-content-center" id="track-img-white-col">
         <img className="image-of-transports" src={TrackShadow} alt="Track image with bottom shadow" />
           <Card className="item-card-service">
             <Card.Body className="body-part-of-texts">
@@ -40,7 +40,7 @@ const Services = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className="d-flex flex-column align-items-center justify-content-center">
+        <Col md={4} className="d-flex flex-column align-items-center justify-content-center" id="track-img-white-col">
         <img className="image-of-transports" src={TrainImg} alt="image of train" />
           <Card className="item-card-service2">
             <Card.Body className="body-part-of-texts">
@@ -53,8 +53,8 @@ const Services = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className="d-flex flex-column align-items-center justify-content-center">
-        <img className="image-of-transports" src={AirwaysImg} alt="image of aeroplane" />
+        <Col md={4} className="d-flex flex-column align-items-center justify-content-center" id="track-img-white-col">
+        <img className="image-of-transports" id="aeroplane" src={AirwaysImg} alt="image of aeroplane" />
           <Card className="item-card-service3">
             <Card.Body className="body-part-of-texts">
               <Card.Title className="title-text-auto">Авиа-перевозка</Card.Title>

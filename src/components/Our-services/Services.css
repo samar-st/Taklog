@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 * { 
     margin: 0;
@@ -10,6 +10,10 @@
 }
 .first-block-services { 
     row-gap: 20px;
+}
+#aeroplane { 
+    width: 400px !important;
+    height: 315px !important;
 }
 .our-services-text { 
     font-weight: 400;
@@ -63,7 +67,7 @@
     color: #ffffff;
     border: none !important;
     margin-top: -70px;
-    width: 390px;
+    width: 420px;
     height: 420px !important;
 }
 .item-card-service2 { 
@@ -73,7 +77,7 @@
     color: #ffffff;
     border: none !important;
     margin-top: -110px;
-    width: 390px;
+    width: 420px;
     height: 420px !important;
 }
 .item-card-service3 { 
@@ -83,15 +87,22 @@
     color: #ffffff;
     border: none !important;
     margin-top: -116px;
-    width: 390px;
+    width: 420px;
     height: 420px !important;
 }
 .card-body { 
     padding: 0 !important;
 }
-/* .services-container-images-cards { 
-    width: max-content !important;
-} */
+.services-container-images-cards { 
+    margin: 0 !important;
+    gap: 18px !important;
+}
+.body-part-of-texts { 
+    width: 347px !important;
+}
+#track-img-white-col { 
+    width: 420px !important;
+}
 @media screen and (max-width:769px) { 
     .block-card-of-advantages {
         border-radius: 20px !important;
@@ -103,6 +114,15 @@
     }
 }
 @media screen and (max-width:500px) { 
+    .body-part-of-texts {
+        width: 310px !important;
+    }
+    .content-text-auto {
+        font-weight: 400;
+        font-size: 16px !important;
+        line-height: 30px;
+        font-family: 'Manrope', sans-serif;
+    }
     .our-services-text {
         font-weight: 400;
         font-size: 18px;
@@ -132,9 +152,9 @@
         color: #ffffff;
         border: none !important;
         margin-top: -70px;
-        padding: 28px 30px 10px 30px;
+        padding: 38px 40px 20px 40px;
         width: 95%;
-        height: 400px !important;
+        height: 335px !important;
     }
     .item-card-service2 {
         border-radius: 20px !important;
@@ -145,7 +165,7 @@
         margin-top: -85px;
         padding: 28px 30px 10px 30px;
         width: 95%;
-        height: 400px !important;
+        height: 335px !important;
     }
     .item-card-service3 { 
         border-radius: 20px !important;
@@ -156,7 +176,7 @@
         margin-top: -110px;
         padding: 28px 30px 10px 30px;
         width: 95%;
-        height: 400px !important;
+        height: 335px !important;
     }
     .image-of-transports { 
         width: 294px;

@@ -19,7 +19,7 @@ const Portfolio = () => {
   const [show, setShow] = useState(false);
   return (
     <Container className="area-of-content-portfolio" id="portfolio">
-      <Row>
+      <Row className="gap-3">
         <span className="our-partners-head-text">Наше портфолио</span>
         <h1 className="entering-sub-text">
           Примеры перевозок компанией <br />
