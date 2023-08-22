@@ -20,7 +20,7 @@ import { Navigation } from 'swiper/modules';
 const Partners = () => {
   return (
     <Container className="content-area-partners" id="partners">
-      <Row>
+      <Row className="gap-4">
         <span className="our-partners-head-text">Наши партнеры</span>
         <h1 className="entering-sub-text">
           <span className="blue-taklog-text">Taklog</span> успешно сотрудничает <br /> c{" "}
@@ -35,20 +35,10 @@ const Partners = () => {
         <img src={Logo4} alt="Logotip img of company" />
       </Row>
       <Row className="block-area-of-logos-mobile-version">
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide id="sliders-of-logos">
-        <img src={Logo1} alt="Logotip img of company" />
-        </SwiperSlide>
-        <SwiperSlide id="sliders-of-logos">
+      <img src={Logo1} alt="Logotip img of company" />
         <img src={Logo2} alt="Logotip img of company" />
-        </SwiperSlide>
-        <SwiperSlide id="sliders-of-logos">
         <img src={Logo3} alt="Logotip img of company" />
-        </SwiperSlide>
-        <SwiperSlide id="sliders-of-logos">
         <img src={Logo4} alt="Logotip img of company" />
-        </SwiperSlide>
-      </Swiper>
       </Row>
     </Container>
   );

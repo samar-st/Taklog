@@ -14,6 +14,7 @@
 #aeroplane { 
     width: 400px !important;
     height: 315px !important;
+    padding-top: 45px !important;
 }
 .our-services-text { 
     font-weight: 400;
@@ -109,11 +110,17 @@
         padding: 40px 20px 50px 20px;
         border: none !important;
         background-color: #F6F6F6 !important;
-        width: 350px !important;
+        width: 310px !important;
         height: 476px !important;
     }
 }
 @media screen and (max-width:500px) { 
+    .first-block-services { 
+        padding: 12px !important;
+    }
+    .block-of-services-content { 
+        margin-top: 120px !important;
+    }
     .body-part-of-texts {
         width: 310px !important;
     }
@@ -151,10 +158,10 @@
         box-shadow: 0px 2px 15px 0px #0000001A;
         color: #ffffff;
         border: none !important;
-        margin-top: -70px;
+        margin-top: -80px;
         padding: 28px 30px 10px 30px;
-        width: 98%;
-        height: 335px !important;
+        width: 350px !important;
+        height: 305px !important;
     }
     .item-card-service2 {
         border-radius: 20px !important;
@@ -162,10 +169,10 @@
         box-shadow: 0px 2px 15px 0px #0000001A;
         color: #ffffff;
         border: none !important;
-        margin-top: -85px;
+        margin-top: -91px;
         padding: 28px 30px 10px 30px;
-        width: 98%;
-        height: 335px !important;
+        width: 350px !important;
+        height: 331px !important;
     }
     .item-card-service3 { 
         border-radius: 20px !important;
@@ -175,12 +182,16 @@
         border: none !important;
         margin-top: -110px;
         padding: 28px 30px 10px 30px;
-        width: 98%;
+        width: 350px !important;
         height: 335px !important;
     }
     .image-of-transports { 
         width: 294px;
         height: 220px;
+    }
+    #train { 
+        width: 250px !important;
+        height: 250px !important;
     }
     .title-text-auto {
         font-family: 'Rubik', sans-serif;
@@ -191,3 +202,11 @@
     }
 }
 
+/*  */
+@media screen and (max-width:400px) { 
+    #aeroplane {
+        width: 330px !important;
+        height: 315px !important;
+        padding-top: 50px !important;
+      }
+}

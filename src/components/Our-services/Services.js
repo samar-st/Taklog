@@ -41,7 +41,7 @@ const Services = () => {
           </Card>
         </Col>
         <Col md={4} className="d-flex flex-column align-items-center justify-content-center" id="track-img-white-col">
-        <img className="image-of-transports" src={TrainImg} alt="image of train" />
+        <img className="image-of-transports" id="train" src={TrainImg} alt="image of train" />
           <Card className="item-card-service2">
             <Card.Body className="body-part-of-texts">
               <Card.Title className="title-text-auto">Железно-дорожная перевозка</Card.Title>

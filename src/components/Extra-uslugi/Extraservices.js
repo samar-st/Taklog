@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Extra-uslugi/Extra-services.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
 const Extraservices = () => {
+
+ const [box , setBox]   = useState(false)
+
   return (
     <Container className="mt-5">
       {/* Top4 cards */}
@@ -29,7 +32,7 @@ const Extraservices = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6}>
+        <Col md={6} id="mobile-hidden-cards">
           <Card className="extra-services-card">
             <Card.Body className="d-flex flex-column gap-4">
               <Card.Title className="uslugi-text-extra">
@@ -52,6 +55,8 @@ const Extraservices = () => {
             </Card.Body>
           </Card>
         </Col>
+        {/*  */}
+       
         <Col md={6}>
           <Card className="extra-services-card-2">
             <Card.Body className="d-flex flex-column gap-4">
@@ -75,7 +80,7 @@ const Extraservices = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6}>
+        <Col md={6} id="mobile-hidden-cards">
           <Card className="extra-services-card-2">
             <Card.Body className="d-flex flex-column gap-4">
               <Card.Title className="uslugi-text-extra">
@@ -92,6 +97,55 @@ const Extraservices = () => {
             </Card.Body>
           </Card>
         </Col>
+        {box && (
+      <Col md={6} id="mobile-hidden-cards-x">
+      <Card className="extra-services-card">
+        <Card.Body className="d-flex flex-column gap-4">
+          <Card.Title className="uslugi-text-extra">
+            Таможенные услуги
+          </Card.Title>
+          <ul className="d-flex flex-column" id="ul-list">
+            <li className="oformlenie-text-list">
+              Экспортная и импортная очистка товара со склада
+            </li>
+            <li className="oformlenie-text-list">
+              В качестве лицензированного получателя мы можем сопроводить
+              опечатанный таможней груз через все необходимые таможенные
+              процедуры
+            </li>
+            
+            <li className="oformlenie-text-list">
+              Содействие в ускоренном получении печатей машинами
+            </li>
+          </ul>
+        </Card.Body>
+      </Card>
+    </Col>
+    )}
+        { box && (
+      <Col md={6} id="mobile-hidden-cards-x">
+      <Card className="extra-services-card-2">
+        <Card.Body className="d-flex flex-column gap-4">
+          <Card.Title className="uslugi-text-extra">
+          Таможенное сопровождение
+          </Card.Title>
+          <ul className="d-flex flex-column" id="ul-list">
+            <li className="oformlenie-text-list">
+            Мы предоставляем таможенное сопровождение в Хофе, Дрездене и Стамбуле
+            </li>
+            <li className="oformlenie-text-list">
+            Возврат вашей экспортной документации
+            </li>
+          </ul>
+        </Card.Body>
+      </Card>
+    </Col>
+    )}
+     <button id="hide-more-less-button"
+              className="show-less-more-text-none"
+              onClick={() => setBox((prev) => !prev)}>
+              {box ? "Меньше >" : "Больше >"}
+            </button>
       </Row>
     </Container>
   );

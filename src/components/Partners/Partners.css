@@ -42,6 +42,10 @@ font-family: 'Manrope', sans-serif; */
     max-width: fit-content;
 }
 @media screen and (max-width:500px) { 
+    .block-area-of-logos-mobile-version { 
+        display: flex !important;
+        gap: 18px !important;
+    }
     #sliders-of-logos { 
         margin: auto !important;
         display: flex;
@@ -75,6 +79,10 @@ font-family: 'Manrope', sans-serif; */
         display: none !important;
     }
     .block-area-of-logos-mobile-version { 
-        display: block !important;
+        display: flex !important;
+        gap: 40px;
+    }
+    .block-area-of-logos-mobile-version img  { 
+        width: 175px !important;
     }
 }

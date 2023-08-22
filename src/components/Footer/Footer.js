@@ -102,12 +102,12 @@ const Footer = () => {
           <Col md={3} className="only-for-contacts-footer">
             <span className="menu-text-footer">Контакты</span>
             <p className="unmutted-text">Телефон</p>
-            <Nav className="d-flex flex-column p-0">
+            <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="phone-number-footer" href="tel: +998 33 338 11 18">+998 33 338 11 18</Nav.Link>
               <Nav.Link className="phone-number-footer" href="tel: +998 71 255 05 08">+998 71 255 05 08</Nav.Link>
             </Nav>
             <p className="unmutted-text">Почта</p>
-            <Nav className="d-flex flex-column p-0">
+            <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="email-footer">murad@taklog.com</Nav.Link>
               <Nav.Link className="email-footer">tashkent@taklog.com</Nav.Link>
             </Nav>
@@ -181,12 +181,12 @@ const Footer = () => {
           <Col md={3} className="only-for-contacts-footer-clone">
             <span className="menu-text-footer">Контакты</span>
             <p className="unmutted-text">Телефон</p>
-            <Nav className="d-flex flex-column p-0 gap-2">
+            <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="phone-number-footer" href="tel: +998 33 338 11 18">+998 33 338 11 18</Nav.Link>
               <Nav.Link className="phone-number-footer" href="tel: +998 71 255 05 08">+998 71 255 05 08</Nav.Link>
             </Nav>
             <p className="unmutted-text">Почта</p>
-            <Nav className="d-flex flex-column p-0 gap-2">
+            <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="email-footer" href="mailto: murad@taklog.com">murad@taklog.com</Nav.Link>
               <Nav.Link className="email-footer" href="mailto: tashkent@taklog.com">tashkent@taklog.com</Nav.Link>
             </Nav>

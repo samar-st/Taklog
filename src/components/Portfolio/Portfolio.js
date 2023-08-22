@@ -22,10 +22,11 @@ const Portfolio = () => {
       <Row className="gap-3">
         <span className="our-partners-head-text">Наше портфолио</span>
         <h1 className="entering-sub-text">
-          Примеры перевозок компанией <br />
-          <span className="blue-taklog-text">Taklog</span> по
-          <span className="blue-taklog-text">всему миру</span>
+        Примеры перевозок грузов компанией
+          <span className="blue-taklog-text"> Taklog</span> по
+          <span className="blue-taklog-text"> всему миру</span>
         </h1>
+       
       </Row>
       {/* section for photos logistic transports */}
       <Row className="mt-5 mb-5">
@@ -111,6 +112,7 @@ const Portfolio = () => {
           </div>
         </Col>
       </Row>
+      <button className="see-all-cases">Посмотреть все кейсы >  </button>
     </Container>
   );
 };

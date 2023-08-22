@@ -30,6 +30,7 @@
     font-family: 'Rubik', sans-serif;
     color: #0063A4;
     margin-bottom: 20px;
+    margin-top: 10px !important;
 }
 .sub-text-heading { 
     font-weight: 400;
@@ -50,6 +51,7 @@
 }
 .hidden-div-block { 
     padding: 0px 12px;
+    transition: .3s ease-in;
 }
 .hidden-us-text { 
     font-family: 'Manrope', sans-serif;
@@ -93,9 +95,11 @@
 }
 .resp-hide-text { 
     display: none;
+    transition: .3s ease-in;
 }
 .desktop-resp-text { 
     display: block;
+    transition: .3s ease-in;
 }
 @media screen and (max-width:1399px) { 
   .sub-text-heading { 
@@ -106,12 +110,14 @@
 @media screen and (max-width:1025px) { 
     .hidden-div-block { 
         padding: 0px !important;
+        transition: .3s ease-in;
     }
     #second-content-about { 
         width: 100% !important;
     }
     .desktop-resp-text { 
         display: none;
+        transition: .3s ease-in;
     }
     .common-about-container {
         display: flex !important;
@@ -137,6 +143,7 @@
     }
     .resp-hide-text { 
         display: block;
+        transition: .3s ease-in;
     }
 }
 
@@ -185,3 +192,7 @@
         height: 200px !important;
     }
 }
+
+/*  */
+/* Анимация плавного раскрытия и скрытия */
+

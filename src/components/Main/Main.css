@@ -159,6 +159,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .left-part-of-container { 
+    padding: 18px !important;
+  }
   .right-part-of-container {
     margin-right: -11.9px !important;
     margin-left: 0;
@@ -200,3 +203,14 @@
 }
 }
 
+@media screen and (max-width:400px) { 
+  .right-part-of-container {
+    margin-right: -11.9px !important;
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+}
