@@ -19,7 +19,7 @@ const Main = () => {
             </p>
             <p className="more-text-main-mobx">
               Более 30 лет компания Taklog является надежным партнером в
-              области логистики и экспедирования грузов.
+              области логистики <br/>и экспедирования грузов.
             </p>
         </Row>
         <div className="statistics-section">

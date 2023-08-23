@@ -42,9 +42,13 @@ font-family: 'Manrope', sans-serif; */
     max-width: fit-content;
 }
 @media screen and (max-width:500px) { 
+    .content-area-partners {
+        margin-top: 100px !important;
+    }
     .block-area-of-logos-mobile-version { 
         display: flex !important;
-        gap: 18px !important;
+        gap: 50px !important;
+        padding: 10px !important;
     }
     #sliders-of-logos { 
         margin: auto !important;

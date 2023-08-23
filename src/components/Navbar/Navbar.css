@@ -4,6 +4,22 @@
   padding: 0;
   font-family: "Rubik", sans-serif;
 }
+
+.navbar-toggler { 
+  border: none !important;
+}
+.navbar-collapse { 
+  display: none;
+}
+.offcanvas-menu.active {
+  right: 0;
+  z-index: 100;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
 .link-navbar-top {
   font-size: 18px !important;
   font-weight: 400 !important;
@@ -59,10 +75,13 @@ a {
   }
 }
 @media screen and (max-width:550px) { 
+  .App {
+    padding-top: 25px !important;
+  }
   .content-of-navbar { 
     border-radius: 20px;
-    margin: 20px;
-    padding: 10px !important;
+    margin: 0px 16px;
+    padding: 5px 10px !important;
     border: none !important;
     box-shadow: 0px 2px 8px 0px #0000001F;
   }
@@ -81,4 +100,90 @@ a {
     gap: 34px !important;
 
 }
+}
+
+
+/* off canvas */
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  right: -94%;
+  width: 94%;
+  height: 812px;
+  background-color: #0063a4;
+  /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2); */
+  overflow-y: auto;
+  transition: right 0.3s ease-in-out;
+}
+
+.offcanvas-menu.active {
+  right: 0;
+}
+
+.offcanvas-content {
+  padding: 39.879px 39.857px 46.322px 94px;
+}
+
+
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: rgba(217, 217, 217, 1);
+    padding: 8.879px 24.857px 1.322px 4px !important;
+}
+
+
+.close-button:focus {
+  outline: none;
+}
+#mobile-off-canvas-links { 
+  color: #fff !important;
+  align-items: end;
+  gap: 30px;
+  margin-top: 50px;
+}
+#mobile-off-canvas-links a { 
+  color: #fff !important;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* Add your other styles as needed */
+
+
+/* Add your other styles as needed */
+
+.text-of-clock { 
+  color: #FFF;
+text-align: center;
+font-family: "Rubik", sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px; /* 133.333% */
+}
+.bottom-side-of-canvas { 
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.links-for-social-media-bg-offcanvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #FFF !important;
+  border-radius: 50%;
+}
+.block-for-socials-bg-offcanvas { 
+  display: flex;
+  gap: 22px;
 }

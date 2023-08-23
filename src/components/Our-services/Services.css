@@ -14,7 +14,6 @@
 #aeroplane { 
     width: 400px !important;
     height: 315px !important;
-    padding-top: 45px !important;
 }
 .our-services-text { 
     font-weight: 400;
@@ -153,7 +152,7 @@
         margin-top: 0px !important;
     }
     .item-card-service {
-        border-radius: 20px !important;
+        border-radius: 16.33px !important;
         /* padding: 46px 46px 40px 46px; */
         box-shadow: 0px 2px 15px 0px #0000001A;
         color: #ffffff;
@@ -164,7 +163,7 @@
         height: 305px !important;
     }
     .item-card-service2 {
-        border-radius: 20px !important;
+        border-radius: 16.33px !important;
         /* padding: 46px 46px 40px 46px; */
         box-shadow: 0px 2px 15px 0px #0000001A;
         color: #ffffff;
@@ -175,7 +174,7 @@
         height: 331px !important;
     }
     .item-card-service3 { 
-        border-radius: 20px !important;
+        border-radius: 16.33px !important;
         /* padding: 46px 46px 40px 46px; */
         box-shadow: 0px 2px 15px 0px #0000001A;
         color: #ffffff;
@@ -203,10 +202,16 @@
 }
 
 /*  */
-@media screen and (max-width:400px) { 
+@media screen and (max-width:500px) { 
     #aeroplane {
-        width: 330px !important;
-        height: 315px !important;
-        padding-top: 50px !important;
+        width: 320px !important;
+        height: 215px !important;
+        /* padding-top: 50px !important; */
       }
+}
+
+@media screen and (min-width:1026px) { 
+    #aeroplane {
+        padding-top: 45px !important;
+    }
 }

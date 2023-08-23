@@ -18,7 +18,7 @@ const Offices = () => {
         </p>
       </Row>
       {/* google maps */}
-      <Row className="mt-5 mb-5">
+      <Row className="iframe-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.2364940374323!2d-122.47460878475039!3d37.71412637977059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7c4bb6f6521f%3A0x1704552fb8861a1e!2zNTUgQ2h1bWFzZXJvIERyLCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEzMiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1648149694119!5m2!1sru!2s"
           allowfullscreen=""

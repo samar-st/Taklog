@@ -56,9 +56,12 @@ font-family: 'Manrope', sans-serif; */
     width: 110px !important;
 }
 @media screen and (max-width:500px) { 
+    .area-of-content-advantages {
+        margin-top: 100px !important;
+    }
     #hide-more-less-button { 
         display: block !important;
-        margin-left: 9px !important;
+        /* margin-left: 9px !important; */
     }
     #desk-text-support { 
         display: none;

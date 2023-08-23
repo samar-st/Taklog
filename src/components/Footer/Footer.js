@@ -22,8 +22,10 @@ const Footer = () => {
       <Container>
         <Row>
           <h1 className="head-text-footer">
-            Нужно <span>доставить</span> товар? <br /> Довертесь{" "}
-            <span>нам!</span>
+            Нужно <span>доставить</span> товар? <br/>  Довертесь <span>нам!</span>
+          </h1>
+          <h1 className="head-text-footer-mobx">
+            Нужно <span>доставить</span> <br/> товар? Довертесь <span>нам!</span>
           </h1>
         </Row>
 
@@ -101,21 +103,25 @@ const Footer = () => {
           </Col>
           <Col md={3} className="only-for-contacts-footer">
             <span className="menu-text-footer">Контакты</span>
-            <p className="unmutted-text">Телефон</p>
+           <div className="desktop-footer-links-all"> <p className="unmutted-text">Телефон</p>
             <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="phone-number-footer" href="tel: +998 33 338 11 18">+998 33 338 11 18</Nav.Link>
               <Nav.Link className="phone-number-footer" href="tel: +998 71 255 05 08">+998 71 255 05 08</Nav.Link>
-            </Nav>
-            <p className="unmutted-text">Почта</p>
+            </Nav></div>
+           <div className="desktop-footer-links-all">
+           <p className="unmutted-text">Почта</p>
             <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="email-footer">murad@taklog.com</Nav.Link>
               <Nav.Link className="email-footer">tashkent@taklog.com</Nav.Link>
             </Nav>
-            <p className="unmutted-text">Адрес</p>
+           </div>
+           <div className="desktop-footer-links-all">
+           <p className="unmutted-text">Адрес</p>
             <h3 className="adress-location-text">
               Узбекистан, г. Ташкент, <br />
               улица Амира Темура, 45
             </h3>
+           </div>
           </Col>
           <div id="mob-resp-block-footer">
           <Col md={2} className="block-menu-footer-clone">
@@ -180,21 +186,27 @@ const Footer = () => {
           </Col>
           <Col md={3} className="only-for-contacts-footer-clone">
             <span className="menu-text-footer">Контакты</span>
+            <div className="d-flex flex-column" id="mobx-footer-links-all">
             <p className="unmutted-text">Телефон</p>
             <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="phone-number-footer" href="tel: +998 33 338 11 18">+998 33 338 11 18</Nav.Link>
               <Nav.Link className="phone-number-footer" href="tel: +998 71 255 05 08">+998 71 255 05 08</Nav.Link>
             </Nav>
+            </div>
+            <div className="d-flex flex-column" id="mobx-footer-links-all">
             <p className="unmutted-text">Почта</p>
             <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="email-footer" href="mailto: murad@taklog.com">murad@taklog.com</Nav.Link>
               <Nav.Link className="email-footer" href="mailto: tashkent@taklog.com">tashkent@taklog.com</Nav.Link>
             </Nav>
+            </div>
+            <div className="d-flex flex-column" id="mobx-footer-links-all">
             <p className="unmutted-text">Адрес</p>
             <h3 className="adress-location-text">
               Узбекистан, г. Ташкент, <br />
               улица Амира Темура, 45
             </h3>
+            </div>
           </Col>
           </div>
         

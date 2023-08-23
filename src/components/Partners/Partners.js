@@ -31,14 +31,14 @@ const Partners = () => {
       <Row className="block-area-of-logos">
         <img src={Logo1} alt="Logotip img of company" />
         <img src={Logo2} alt="Logotip img of company" />
-        <img src={Logo3} alt="Logotip img of company" />
         <img src={Logo4} alt="Logotip img of company" />
+        <img src={Logo3} alt="Logotip img of company" />
       </Row>
       <Row className="block-area-of-logos-mobile-version">
       <img src={Logo1} alt="Logotip img of company" />
         <img src={Logo2} alt="Logotip img of company" />
-        <img src={Logo3} alt="Logotip img of company" />
         <img src={Logo4} alt="Logotip img of company" />
+        <img src={Logo3} alt="Logotip img of company" />
       </Row>
     </Container>
   );
