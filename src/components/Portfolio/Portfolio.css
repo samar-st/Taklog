@@ -23,7 +23,7 @@ font-family: 'Manrope', sans-serif; */
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 270px !important;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
@@ -133,7 +133,7 @@ font-family: 'Manrope', sans-serif; */
 @media screen and (max-width: 500px) {
   .image-in-swiper-2 {
     width: 372px !important;
-    height: 186px !important;
+    height: 244px !important;
     border-radius: 17px !important;
 }
   .see-all-cases {
@@ -147,6 +147,7 @@ font-family: 'Manrope', sans-serif; */
     background: transparent;
     color: rgba(0, 99, 164, 1) !important;
     margin: auto;
+    text-align: center;
   }
   .area-of-content-portfolio {
     margin-top: 100px !important;
@@ -160,8 +161,10 @@ font-family: 'Manrope', sans-serif; */
     padding: 14px;
   }
   .image-in-swiper {
-    width: -webkit-fill-available;
-    border-radius: 16px !important;
+    max-width: fit-content;
+    width: 373px !important;
+    height: 244px !important;
+    border-radius: 17px !important;
   }
   .napravlenie-text {
     font-family: "Rubik", sans-serif;
@@ -183,5 +186,14 @@ font-family: 'Manrope', sans-serif; */
     text-align: left;
     color: #161616;
     margin-left: 15px;
+  }
+  .delivery-image-portfolio {
+    border-radius: 20px !important;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 220px !important;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
   }
 }

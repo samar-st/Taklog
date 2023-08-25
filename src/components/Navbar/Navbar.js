@@ -11,6 +11,8 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HamburgerIconImg from '../../images/div.hamburger-inner.svg'
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import { OffcanvasBody } from "react-bootstrap";
 
 const Telegram = <FontAwesomeIcon icon={faTelegram} style={{color: "#0063a4",}} />
 const Instagram = <FontAwesomeIcon icon={faInstagram} style={{color: "#0063a4",}} />
@@ -34,11 +36,11 @@ const NavbarTop = () => {
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = "hidden"; // Prevent scrolling
+      // document.body.style.overflow = "hidden";
       document.body.style.background = "rgba(17, 17, 17, 0.80)";
       document.body.style.backdropFilter = "blur(5px)";
     } else {
-      document.body.style.overflow = ""; // Enable scrolling
+      // document.body.style.overflow = "";
       document.body.style.background = "";
       document.body.style.backdropFilter = "";
     }
@@ -149,7 +151,7 @@ const NavbarTop = () => {
           </Nav>
         </Navbar.Collapse>
 
-        <div className={`offcanvas-menu ${isMenuOpen ? "active" : ""}`}>
+        <div className={`offcanvas-menu ${isMenuOpen ? "active" : ""}`} data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
           <div className="offcanvas-content">
             <Nav
               className="justify-content-center flex-grow-1"

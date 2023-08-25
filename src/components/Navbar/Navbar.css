@@ -11,10 +11,7 @@
 .navbar-collapse { 
   display: none;
 }
-.offcanvas-menu.active {
-  right: 0;
-  z-index: 100;
-}
+
 .navbar-toggler:focus {
   text-decoration: none;
   outline: none !important;
@@ -75,10 +72,17 @@ a {
   }
 }
 @media screen and (max-width:550px) { 
+
   .App {
     padding-top: 25px !important;
   }
   .content-of-navbar { 
+    position: fixed !important;
+    position: sticky !important;
+    top: 0;
+    background-color: #FFF;
+    z-index: 100000 !important; /* Adjust this value as needed */
+    /* ... (other styles you already have) */
     border-radius: 20px;
     margin: 0px 16px;
     padding: 5px 10px !important;
@@ -105,23 +109,31 @@ a {
 
 /* off canvas */
 .offcanvas-menu {
-  position: fixed;
-  top: 0;
-  right: -94%;
-  width: 94%;
-  height: 812px;
+  display: none;
+  position: absolute;
+  /* position: sticky; */
+  top: -25px;
+  right: -105%;
+  width: 105%;
+  height: 830px;
+  /* transform: translateX(100%); */
   background-color: #0063a4;
   /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2); */
-  overflow-x: auto;
+  overflow-x: auto !important;
   transition: right 0.3s ease-in-out;
 }
 
 .offcanvas-menu.active {
-  right: 0;
+  overflow: hidden;
+  /* position: fixed !important; */
+  right: -18px;
+  z-index: 1;
+  display: block;
+  /* top: 0; */
 }
 
 .offcanvas-content {
-  padding: 39.879px 39.857px 46.322px 94px;
+  padding: 30.879px 39.857px 46.322px 94px;
 }
 
 
@@ -186,4 +198,14 @@ line-height: 24px; /* 133.333% */
 .block-for-socials-bg-offcanvas { 
   display: flex;
   gap: 22px;
+}
+
+/* stay on top */
+.content-of-navbar {
+  position: fixed !important;
+  position: sticky !important;
+  top: 0;
+  background-color: #FFF;
+  z-index: 100 !important; /* Adjust this value as needed */
+  /* ... (other styles you already have) */
 }

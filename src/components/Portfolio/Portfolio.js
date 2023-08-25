@@ -5,16 +5,16 @@ import DeliveryImg from "../../images/GERMANY-TO-TURKEY_001-1200x600 3.svg";
 import ImgSwiper from "../../images/Turkey-to-Germany_004-1200x600.svg";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import ShowImg1 from '../../images/GERMANY-TO-TURKEY_001-1200x600 1.svg'
-import ModalImg1 from '../../images/Turkey-to-Germany_002-1200x600.jpg'
-import ModalImg2 from '../../images/Turkey-to-Germany_003-1200x600.jpg'
-import ModalImg3 from '../../images/Turkey-to-Germany_004-1200x600.svg'
-import ModalCase1 from '../../images/Shipments-to-Usbekistan_001-1-1200x675.jpg'
-import ModalCase2 from '../../images/Shipments-to-Usbekistan_003-1200x675.jpg'
-import ModalCase3 from '../../images/Shipments-to-Usbekistan_004-1200x675.jpg'
-import ModalLast1 from '../../images/GERMANY-TO-TURKEY_001-1200x600.jpg'
-import ModalLast2 from '../../images/GERMANY-TO-TURKEY_002-1200x600.jpg'
-import ModalLast3 from '../../images/GERMANY-TO-TURKEY_003-1200x600.jpg'
+import ShowImg1 from "../../images/GERMANY-TO-TURKEY_001-1200x600 1.svg";
+import ModalImg1 from "../../images/Turkey-to-Germany_002-1200x600.jpg";
+import ModalImg2 from "../../images/Turkey-to-Germany_003-1200x600.jpg";
+import ModalImg3 from "../../images/Turkey-to-Germany_004-1200x600.jpg";
+import ModalCase1 from "../../images/Shipments-to-Usbekistan_001-1-1200x675.jpg";
+import ModalCase2 from "../../images/Shipments-to-Usbekistan_003-1200x675.jpg";
+import ModalCase3 from "../../images/Shipments-to-Usbekistan_004-1200x675.jpg";
+import ModalLast1 from "../../images/GERMANY-TO-TURKEY_001-1200x600.jpg";
+import ModalLast2 from "../../images/GERMANY-TO-TURKEY_002-1200x600.jpg";
+import ModalLast3 from "../../images/GERMANY-TO-TURKEY_003-1200x600.jpg";
 // swipe components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,7 +23,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay , Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const Portfolio = () => {
   const [show, setShow] = useState(false);
@@ -44,7 +44,7 @@ const Portfolio = () => {
         <Col md={4} className="block-of-delivery-images">
           <img
             className="delivery-image-portfolio"
-            src={ShowImg1}
+            src={ModalImg1}
             alt="From Germany to Turkey export images"
           />
           <div className="middle-effect">
@@ -67,13 +67,13 @@ const Portfolio = () => {
               <Modal.Header closeButton></Modal.Header>
               <Modal.Body className="">
                 <Swiper
-                  autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  }}
-                    pagination={true}
-                    modules={[Autoplay , Pagination]}
-                    className="mySwiper"
+                  // autoplay={{
+                  //   delay: 2500,
+                  //   disableOnInteraction: false,
+                  // }}
+                  pagination={true}
+                  modules={[Autoplay, Pagination]}
+                  className="mySwiper"
                 >
                   <SwiperSlide>
                     <img
@@ -108,7 +108,7 @@ const Portfolio = () => {
         <Col md={4} className="block-of-delivery-images">
           <img
             className="delivery-image-portfolio"
-            src={DeliveryImg}
+            src={ModalCase2}
             alt="From Germany to Turkey export images"
           />
           <div className="middle-effect">
@@ -131,12 +131,12 @@ const Portfolio = () => {
               <Modal.Header closeButton></Modal.Header>
               <Modal.Body className="">
                 <Swiper
-                 autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
                   pagination={true}
-                  modules={[Autoplay , Pagination]}
+                  modules={[Autoplay, Pagination]}
                   className="mySwiper"
                 >
                   <SwiperSlide>
@@ -162,7 +162,7 @@ const Portfolio = () => {
                   </SwiperSlide>
                   <span className="napravlenie-text">Направление</span> <br />
                   <span className="from-side-to-side-text">
-                  Германия - Узбекистан
+                    Германия - Узбекистан
                   </span>
                 </Swiper>
               </Modal.Body>
@@ -172,7 +172,7 @@ const Portfolio = () => {
         <Col md={4} className="block-of-delivery-images">
           <img
             className="delivery-image-portfolio"
-            src={ShowImg1}
+            src={ModalLast1}
             alt="From Germany to Turkey export images"
           />
           <div className="middle-effect">
@@ -195,12 +195,12 @@ const Portfolio = () => {
               <Modal.Header closeButton></Modal.Header>
               <Modal.Body className="">
                 <Swiper
-                 autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
                   pagination={true}
-                  modules={[Autoplay , Pagination]}
+                  modules={[Autoplay, Pagination]}
                   className="mySwiper"
                 >
                   <SwiperSlide>
@@ -213,20 +213,20 @@ const Portfolio = () => {
                   <SwiperSlide>
                     <img
                       className="image-in-swiper-2"
-                      src={ModalLast1}
+                      src={ModalLast2}
                       alt="Swiper img"
                     />
                   </SwiperSlide>
                   <SwiperSlide>
                     <img
                       className="image-in-swiper-2"
-                      src={ModalLast1}
+                      src={ModalLast3}
                       alt="Swiper img"
                     />
                   </SwiperSlide>
                   <span className="napravlenie-text">Направление</span> <br />
                   <span className="from-side-to-side-text">
-                  Германия - Турция
+                    Германия - Турция
                   </span>
                 </Swiper>
               </Modal.Body>
@@ -234,7 +234,12 @@ const Portfolio = () => {
           </div>
         </Col>
       </Row>
-      <a className="see-all-cases" href="https://instagram.com/taklog.uz?igshid=NTc4MTIwNjQ2YQ==">Посмотреть все кейсы > </a>
+      <a
+        className="see-all-cases"
+        href="https://instagram.com/taklog.uz?igshid=NTc4MTIwNjQ2YQ=="
+      >
+        Посмотреть все кейсы >{" "}
+      </a>
     </Container>
   );
 };
