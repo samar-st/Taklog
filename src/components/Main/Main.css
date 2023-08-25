@@ -94,7 +94,18 @@
         width: 700px;
       }
 } */
-
+@media screen and (min-width:1450px) { 
+  .right-part-of-container {
+    margin-left: 46%;
+    margin-top: -510px;
+}
+}
+@media screen and (min-width:1610px) { 
+  .right-part-of-container {
+    margin-left: 50%;
+    margin-top: -510px;
+}
+}
 @media screen and (max-width: 1200px) {
   .right-part-of-container img {
     max-width: 100%; /* Ensure the image doesn't exceed its container */

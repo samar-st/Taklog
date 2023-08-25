@@ -150,10 +150,10 @@ font-family: 'Manrope', sans-serif; */
 }
 .call-us-footer {
   border: none;
-  color: #ffffff;
+  color: #ffffff !important;
   font-family: "Rubik", sans-serif;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.20000000298023224px;
   padding: 12px 38.5px 14px 42px;
@@ -170,8 +170,8 @@ font-family: 'Manrope', sans-serif; */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   background: #31373f;
   border-radius: 50%;
 }

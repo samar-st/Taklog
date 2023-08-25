@@ -7,11 +7,19 @@ font-family: 'Manrope', sans-serif; */
 .area-of-content-portfolio {
   margin-top: 12%;
 }
+.image-in-swiper { 
+  border-radius: 20px !important;
+}
+.image-in-swiper-2 { 
+  height: 600px !important;
+  border-radius: 20px !important;
+}
 /* hover effect of images */
 .block-of-delivery-images {
   position: relative;
 }
 .delivery-image-portfolio {
+  border-radius: 20px !important;
   opacity: 1;
   display: block;
   width: 100%;
@@ -46,6 +54,14 @@ font-family: 'Manrope', sans-serif; */
   font-family: "Rubik", sans-serif;
   color: #ffffff;
   width: max-content;
+}
+.text-name-full-2 {
+  font-weight: 600 !important;
+  font-size: 36px;
+  line-height: 42.66px;
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  width: min-content;
 }
 .moreee-info {
   border-radius: 30px !important;
@@ -115,6 +131,11 @@ font-family: 'Manrope', sans-serif; */
 }
 
 @media screen and (max-width: 500px) {
+  .image-in-swiper-2 {
+    width: 372px !important;
+    height: 186px !important;
+    border-radius: 17px !important;
+}
   .see-all-cases {
     display: block;
     font-family: "Rubik", sans-serif;
@@ -124,7 +145,7 @@ font-family: 'Manrope', sans-serif; */
     letter-spacing: 0px;
     border: none;
     background: transparent;
-    color: rgba(0, 99, 164, 1);
+    color: rgba(0, 99, 164, 1) !important;
     margin: auto;
   }
   .area-of-content-portfolio {
@@ -140,6 +161,7 @@ font-family: 'Manrope', sans-serif; */
   }
   .image-in-swiper {
     width: -webkit-fill-available;
+    border-radius: 16px !important;
   }
   .napravlenie-text {
     font-family: "Rubik", sans-serif;
@@ -150,6 +172,7 @@ font-family: 'Manrope', sans-serif; */
     text-align: left;
     color: #0063a4;
     margin-left: 15px;
+
   }
   .from-side-to-side-text {
     font-family: "Rubik", sans-serif;

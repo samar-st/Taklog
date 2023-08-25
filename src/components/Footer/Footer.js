@@ -216,11 +216,11 @@ const Footer = () => {
               Есть вопросы? Позвоните нам, будем рады оказать консультационную
               поддержку по всем вопросам логистики.
             </p>
-            <button className="call-us-footer">Позвонить</button>
+            <a href="https://t.me/taklog" className="call-us-footer" >Позвонить</a>
             <div className="block-for-socials">
              <a className="links-for-social-media" href="https://m.facebook.com/taklog.uz/">{Facebook}</a>
              <a className="links-for-social-media" href="https://de.linkedin.com/company/taklog-int-trans-gmbh?trk=organization_guest_main-feed-card_feed-actor-name">{Linkedin}</a>
-             <a className="links-for-social-media" href="t.me/taklog">{Telegram}</a>
+             <a className="links-for-social-media" href="https://t.me/taklog">{Telegram}</a>
              <a className="links-for-social-media" href="https://instagram.com/taklog.uz?igshid=NTc4MTIwNjQ2YQ==">{Instagram}</a>
             </div>
           </Col>

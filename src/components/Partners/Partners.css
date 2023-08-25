@@ -34,8 +34,8 @@ font-family: 'Manrope', sans-serif; */
     display: none !important;
 }
 .block-area-of-logos img { 
-    width: 100%;
-    max-width: fit-content;
+    width: 250px;
+    height: 170px;
 }
 .block-area-of-logos-mobile-version img { 
     width: 100%;
@@ -47,7 +47,7 @@ font-family: 'Manrope', sans-serif; */
     }
     .block-area-of-logos-mobile-version { 
         display: flex !important;
-        gap: 50px !important;
+        gap: 55px !important;
         padding: 10px !important;
     }
     #sliders-of-logos { 

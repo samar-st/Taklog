@@ -39,14 +39,14 @@
   border-radius: 30px;
   padding: 10px 26px;
   border: 2px solid #0063a4 !important;
-  color: #0063a4;
+  color: #0063a4 !important;
   background-color: transparent;
   transition: 0.4 ease-in-out;
 }
 .connect-button-navbar:hover {
-  background: #0063a4;
+  background: #0063a4 !important;
   transition: 0.4 ease-in-out;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 a {
   color: #161616 !important;
@@ -112,7 +112,7 @@ a {
   height: 812px;
   background-color: #0063a4;
   /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2); */
-  overflow-y: auto;
+  overflow-x: auto;
   transition: right 0.3s ease-in-out;
 }
 

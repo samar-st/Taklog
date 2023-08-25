@@ -65,7 +65,7 @@ const NavbarTop = () => {
                 activeClass="active"
                 to="mainPage"
                 spy={true}
-                smooth={false}
+                smooth={true}
                 offset={-170} // Adjust this offset according to your design
               >
                 Главная
@@ -145,7 +145,7 @@ const NavbarTop = () => {
             <Nav.Link className="link-navbar-top" href="/ru">
               Ru
             </Nav.Link>
-            <button className="connect-button-navbar">Связаться</button>
+            <a href="https://t.me/taklog" className="connect-button-navbar">Связаться</a>
           </Nav>
         </Navbar.Collapse>
 
