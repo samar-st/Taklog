@@ -67,10 +67,10 @@ const Portfolio = () => {
               <Modal.Header closeButton></Modal.Header>
               <Modal.Body className="">
                 <Swiper
-                  // autoplay={{
-                  //   delay: 2500,
-                  //   disableOnInteraction: false,
-                  // }}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
                   pagination={true}
                   modules={[Autoplay, Pagination]}
                   className="mySwiper"
