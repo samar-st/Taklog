@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import '../Partners/Partners.css';
 import Logo1 from '../../images/Item ⏵ Link ⏵ UNSERE-PARTNER-1.jpg.svg';
@@ -15,12 +15,19 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
+import Aos from "aos";
+// import { duration } from "@mui/material";
 
 
 const Partners = () => {
+
+  useEffect( () => { 
+    Aos.init({duration : 2000})
+  } )
+
   return (
     <Container className="content-area-partners" id="partners">
-      <Row className="gap-4">
+      <Row className="gap-4" data-aos-once="false" data-aos="fade-right">
         <span className="our-partners-head-text">Наши партнеры</span>
         <h1 className="entering-sub-text">
           <span className="blue-taklog-text">Taklog</span> успешно сотрудничает <br /> c{" "}
@@ -28,13 +35,13 @@ const Partners = () => {
         </h1>
       </Row>
       {/* logos from companies */}
-      <Row className="block-area-of-logos">
+      <Row className="block-area-of-logos" data-aos-once="false" data-aos="fade-left">
         <img src={Logo1} alt="Logotip img of company" />
         <img src={Logo2} alt="Logotip img of company" />
         <img src={Logo4} alt="Logotip img of company" />
         <img src={Logo3} alt="Logotip img of company" />
       </Row>
-      <Row className="block-area-of-logos-mobile-version">
+      <Row className="block-area-of-logos-mobile-version" data-aos-once="false" data-aos="fade-left">
       <img src={Logo1} alt="Logotip img of company" />
         <img src={Logo2} alt="Logotip img of company" />
         <img src={Logo4} alt="Logotip img of company" />

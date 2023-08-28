@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Extra-uslugi/Extra-services.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import Aos from "aos";
+// import { duration } from "@mui/material";
 
 const Extraservices = () => {
+
+  useEffect( () => { 
+    Aos.init({duration: 2000})
+  } )
 
  const [box , setBox]   = useState(false)
 
@@ -11,7 +17,7 @@ const Extraservices = () => {
     <Container className="" id="extraservices">
       {/* Top4 cards */}
       <Row className="extra-content-area">
-        <Col md={6}>
+        <Col md={6} data-aos="fade-up-right" data-aos-once="false">
           <Card className="extra-services-card">
             <Card.Body className="d-flex flex-column gap-4">
               <Card.Title className="uslugi-text-extra">
@@ -32,7 +38,7 @@ const Extraservices = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6} id="mobile-hidden-cards">
+        <Col md={6} id="mobile-hidden-cards" data-aos="fade-up-left" data-aos-once="false">
           <Card className="extra-services-card">
             <Card.Body className="d-flex flex-column gap-4">
               <Card.Title className="uslugi-text-extra">
@@ -57,7 +63,7 @@ const Extraservices = () => {
         </Col>
         {/*  */}
        
-        <Col md={6}>
+        <Col md={6} data-aos="fade-down-right" data-aos-once="false">
           <Card className="extra-services-card-2">
             <Card.Body className="d-flex flex-column gap-4">
               <Card.Title className="uslugi-text-extra">
@@ -80,7 +86,7 @@ const Extraservices = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6} id="mobile-hidden-cards">
+        <Col md={6} id="mobile-hidden-cards" data-aos="fade-down-left" data-aos-once="false">
           <Card className="extra-services-card-2">
             <Card.Body className="d-flex flex-column gap-4">
               <Card.Title className="uslugi-text-extra">

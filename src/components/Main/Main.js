@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import "../Main/Main.css";
 import TrackImg from '../../images/track.svg';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Main = () => {
+
+  useEffect( () =>  { 
+     Aos.init({duration:1300})
+  })
+
   return (
     <Container className="fully-main-container" id="mainPage">
-      <div className="left-part-of-container">
+      <div className="left-part-of-container" data-aos = "fade-right">
         <Row className="text-content-mini">
             <h1 className="head-text-main">
               Надежно <span className="delivery-text">перевезем</span> <br /> ваш{" "}
@@ -37,7 +44,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="right-part-of-container">
+      <div className="right-part-of-container" data-aos = "fade-left">
         <img src={TrackImg} alt="image of track white" />
       </div>
     </Container>

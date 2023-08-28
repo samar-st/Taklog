@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import "../Our-services/Services.css";
 import TrackShadow from "../../images/track-shadow.svg";
 import TrainImg from "../../images/gruzovye-zheleznodorozhnye-perevozki 1.svg";
 import AirwaysImg from "../../images/Flying-Aeroplane-PNG-Free-Image 1.svg";
+import Aos from "aos";
 
 const Services = () => {
+
+useEffect( () => { 
+  Aos.init({
+    duration:3000})
+} )
+
   return (
     <Container className="block-of-services-content" id="services">
       {/* entering section for services page */}
       <Row className="first-block-services">
-        <span className="our-services-text">Наши услуги</span>
-        <h1 className="sub-title-text-services">
+        <span className="our-services-text" data-aos-once="false" data-aos="fade-right ">Наши услуги</span>
+        <h1 className="sub-title-text-services" data-aos-once="false" data-aos="fade-right">
           <span className="blue-text-span">Оказываем</span> полную{" "}
           <span className="blue-text-span">поддержку</span> в доставке вашего
           груза
         </h1>
-        <p className="client-support-text">
+        <p className="client-support-text" data-aos="fade-left">
           Компания TAKLOG оказывает полную поддержку нашим клиентам, от отправки
           до таможенного оформления и заполнения сопроводительной документации
           вашего груза — TAKLOG предлагает полный пакет услуг. Мы покрываем все
@@ -27,7 +34,7 @@ const Services = () => {
 
       {/* 3 cards with images of trains and airplane */}
       <Row className="services-container-images-cards">
-        <Col
+        <Col data-aos="zoom-out-up"
           md={4}
           className="d-flex flex-column align-items-center justify-content-center"
           id="track-img-white-col"
@@ -50,7 +57,7 @@ const Services = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col
+        <Col data-aos="zoom-out-up"
           md={4}
           className="d-flex flex-column align-items-center justify-content-center"
           id="track-img-white-col"
@@ -74,7 +81,7 @@ const Services = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col
+        <Col data-aos="zoom-out-up"
           md={4}
           className="d-flex flex-column align-items-center justify-content-center"
           id="track-img-white-col"

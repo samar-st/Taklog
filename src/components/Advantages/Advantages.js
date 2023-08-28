@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Advantages/Advantages.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import Aos from "aos";
 
 const Advantages = () => {
+
+useEffect( () => { 
+  Aos.init({duration: 1000})
+} )
+
   const [text, setText] = useState(false);
 
   return (
     <Container className="area-of-content-advantages" id="advantages">
       <Row className="first-block-services">
-        <span className="our-services-text">Наши преимущества</span>
-        <h1 className="sub-title-text-advantages">
+        <span className="our-services-text"  data-aos="zoom-in-right" data-aos-once="false">Наши преимущества</span>
+        <h1 className="sub-title-text-advantages"  data-aos="zoom-in-right" data-aos-once="false">
           <span className="blue-text-span">Taklog</span> - больше чем просто
           логистика
         </h1>
-        <p className="client-support-text">
+        <p className="client-support-text" data-aos="zoom-in-left" data-aos-once="false">
           Неуклонный рост современной экономики, а также ее перманентная
           глобализация, являются основными факторами повышения эффективности
           доставки грузов, которая в свою очередь является одним из наиболее
@@ -47,7 +53,7 @@ const Advantages = () => {
 
       {/* 3 cards section */}
       <Row className="mt-5" id="three-cards-block">
-        <Col md={4}>
+        <Col md={4} data-aos="zoom-in-up" data-aos-once="false">
           <Card className="block-card-of-advantages">
             <Card.Body className="body-part-of-cards-advantages">
               <Card.Title className="head-text-of-card-advantages">
@@ -63,7 +69,7 @@ const Advantages = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
+        <Col md={4} data-aos="zoom-in-up" data-aos-once="false">
           <Card className="block-card-of-advantages">
             <Card.Body className="body-part-of-cards-advantages">
               <Card.Title className="head-text-of-card-advantages">
@@ -78,7 +84,7 @@ const Advantages = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
+        <Col md={4} data-aos="zoom-in-up" data-aos-once="false">
           <Card className="block-card-of-advantages">
             <Card.Body className="body-part-of-cards-advantages">
               <Card.Title className="head-text-of-card-advantages">

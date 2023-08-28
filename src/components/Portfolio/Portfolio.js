@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Portfolio/Portfolio.css";
 import { Col, Container, Row } from "react-bootstrap";
 import DeliveryImg from "../../images/GERMANY-TO-TURKEY_001-1200x600 3.svg";
@@ -24,14 +24,20 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
+import Aos from "aos";
 
 const Portfolio = () => {
+
+useEffect( ()=> { 
+    Aos.init({duration: 2000})
+})
+
   const [show, setShow] = useState(false);
   const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
   return (
     <Container className="area-of-content-portfolio" id="portfolio">
-      <Row className="gap-3">
+      <Row className="gap-3" data-aos="fade-up-left" data-aos-once="false">
         <span className="our-partners-head-text">Наше портфолио</span>
         <h1 className="entering-sub-text">
           Примеры перевозок грузов компанией
@@ -40,7 +46,7 @@ const Portfolio = () => {
         </h1>
       </Row>
       {/* section for photos logistic transports */}
-      <Row className="mt-5 mb-5">
+      <Row className="mt-5 mb-5" data-aos="fade-up-right" data-aos-once="false">
         <Col md={4} className="block-of-delivery-images">
           <img
             className="delivery-image-portfolio"

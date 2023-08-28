@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Logisticimg from "../../images/1645505365_14-kartinkin-net-p-logistika-kartinki-14 1.svg";
 import "../About/About.css";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+  useEffect( () =>  { 
+    Aos.init({ duration: 2000 })
+ })
+
   const [details, setDetails] = useState(false);
 
   return (
     <Container className="block-of-this-about-page" id="about">
-      <div className="super-block-content">
+      <div className="super-block-content" data-aos-once="false" data-aos="zoom-out-down">
         <div className="common-about-container">
-          <Row className="w-50" id="second-content-about">
+          <Row className="w-50" id="second-content-about" data-aos-once="false" data-aos="fade-up">
             <span className="o-company-text">О компании</span>
             <h1 className="sub-text-heading">
               Доставим ваш <br /> товар в{" "}
@@ -79,7 +86,7 @@ const About = () => {
               {details ? "Меньше >" : "Больше >"}
             </button>
           </Row>
-          <Row>
+          <Row data-aos-once="false" data-aos="fade-down">
             <img className="logistic-img" src={Logisticimg} alt="img" />
           </Row>
         </div>
