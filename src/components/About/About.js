@@ -86,7 +86,7 @@ const About = () => {
               {details ? "Меньше >" : "Больше >"}
             </button>
           </Row>
-          <Row data-aos-once="false" data-aos="fade-down">
+          <Row data-aos-once="false" data-aos="fade-right">
             <img className="logistic-img" src={Logisticimg} alt="img" />
           </Row>
         </div>
