@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import "../Main/Main.css";
-import TrackImg from '../../images/track.svg';
+import TrackImg from '../../images/track-2.png';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
