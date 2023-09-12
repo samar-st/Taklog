@@ -22,10 +22,10 @@ const Footer = () => {
       <Container>
         <Row>
           <h1 className="head-text-footer">
-            Нужно <span>доставить</span> товар? <br/>  Довертесь <span>нам!</span>
+            Нужно <span>доставить</span> товар? <br/>  Доверьтесь <span>нам!</span>
           </h1>
           <h1 className="head-text-footer-mobx">
-            Нужно <span>доставить</span> <br/> товар? Довертесь <span>нам!</span>
+            Нужно <span>доставить</span> <br/> товар? Доверьтесь <span>нам!</span>
           </h1>
         </Row>
 
@@ -112,7 +112,7 @@ const Footer = () => {
            <p className="unmutted-text">Почта</p>
             <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="email-footer">murad@taklog.com</Nav.Link>
-              <Nav.Link className="email-footer">tashkent@taklog.com</Nav.Link>
+              <Nav.Link className="email-footer">shaxzod.taklog@gmail.com</Nav.Link>
             </Nav>
            </div>
            <div className="desktop-footer-links-all">
@@ -197,7 +197,7 @@ const Footer = () => {
             <p className="unmutted-text">Почта</p>
             <Nav className="d-flex flex-column p-0" id="include-menu-contacts-footer">
               <Nav.Link className="email-footer" href="mailto: murad@taklog.com">murad@taklog.com</Nav.Link>
-              <Nav.Link className="email-footer" href="mailto: tashkent@taklog.com">tashkent@taklog.com</Nav.Link>
+              <Nav.Link className="email-footer" href="mailto: tashkent@taklog.com">shaxzod.taklog@gmail.com</Nav.Link>
             </Nav>
             </div>
             <div className="d-flex flex-column" id="mobx-footer-links-all">
@@ -216,7 +216,7 @@ const Footer = () => {
               Есть вопросы? Позвоните нам, будем рады оказать консультационную
               поддержку по всем вопросам логистики.
             </p>
-            <a href="https://t.me/taklog" className="call-us-footer" >Позвонить</a>
+            <a href="https://t.me/taklog" className="call-us-footer">Связаться</a>
             <div className="block-for-socials">
              <a className="links-for-social-media" href="https://m.facebook.com/taklog.uz/">{Facebook}</a>
              <a className="links-for-social-media" href="https://de.linkedin.com/company/taklog-int-trans-gmbh?trk=organization_guest_main-feed-card_feed-actor-name">{Linkedin}</a>

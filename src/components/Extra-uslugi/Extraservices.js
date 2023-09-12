@@ -71,13 +71,13 @@ const Extraservices = () => {
               </Card.Title>
               <ul className="d-flex flex-column" id="ul-list">
                 <li className="oformlenie-text-list">
-                Оформление TIR-Carnet €
+                Оформление TIR-Carnet
                 </li>
                 <li className="oformlenie-text-list">
                 Оформление транспортной накладной CMR
                 </li>
                 <li className="oformlenie-text-list">Изменения, дополнения к CMR</li>
-                <li className="oformlenie-text-list">Оформление экспортной декларации ЕХ1 (1 позиция)</li>
+                <li className="oformlenie-text-list">Оформление экспортной декларации ЕХ1</li>
                 <li className="oformlenie-text-list">Каждая дополнительная позиция</li>
                 <li className="oformlenie-text-list">Нейтрализация / замена документов</li>
                 <li className="oformlenie-text-list">Копии документов – до 10 копий по одной отгрузке</li>

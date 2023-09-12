@@ -127,7 +127,17 @@ font-family: 'Manrope', sans-serif; */
   margin-left: 15px;
 }
 .see-all-cases {
-  display: none;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  border: none;
+  background: transparent;
+  color: rgba(0, 99, 164, 1) !important;
+  margin: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
